@@ -92,6 +92,7 @@ jobs:
           const secrets = {
             OPENSHIFT_SERVER: `${{ secrets.OPENSHIFT_SERVER }}`,
             OPENSHIFT_TOKEN: `${{ secrets.OPENSHIFT_TOKEN }}`,
+            IMAGE_REGISTRY_PASSWORD: `${{ secrets.ACR_PASSWORD }}`, 
           };
           # const GHCR = "ghcr.io";
           # if (`${{ env.IMAGE_REGISTRY }}`.startsWith(GHCR)) {
