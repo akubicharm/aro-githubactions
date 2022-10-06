@@ -33,7 +33,7 @@ jobs:
   #     # SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}       # Either use SNYK_TOKEN or CRDA_KEY
 
   code-scan:
-    uses: ./.github/workflows/codeql-analysis.yaml
+    uses: ./.github/workflows/codeql-analysis.yml
 
   openshift-ci-cd:
     needs: code-scan
