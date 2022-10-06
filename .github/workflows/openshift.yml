@@ -32,8 +32,11 @@ jobs:
   #     CRDA_KEY: ${{ secrets.CRDA_KEY }}
   #     # SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}       # Either use SNYK_TOKEN or CRDA_KEY
 
+  code-scan:
+    uses: ./.github/workflows/codeql-analysys.yaml
+
   openshift-ci-cd:
-    # needs: crda-scan
+    needs: code-scan
     name: Build and deploy to OpenShift
     runs-on: ubuntu-20.04
     environment: production
