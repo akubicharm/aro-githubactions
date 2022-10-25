@@ -10,7 +10,11 @@ const timer = require('timers/promises')
 const key = process.env.COSMOS_KEY;
 const endpoint = process.env.COSMOS_ENDPOINT;
 
-const html = "<html><body><h1>Hello GitHub Actions</h1><br><img src='media/Octocat.jpg'></body></html>"
+const html = "<html><body>"
++ "<h1>Hello GitHub Actions</h1><br>"
++ "<img src='https://github.com/akubicharm/aro-githubactions/raw/master/src/media/Octocat.jpg'>"
+//+ "<img src='https://github.com/akubicharm/aro-githubactions/raw/master/src/media/okd-panda-flat_rocketeer_with_number.svg'>"
++ "</body></html>"
 
 
 http.createServer(function (req, res) {
@@ -31,7 +35,7 @@ http.createServer(function (req, res) {
     //res.end(`Hello Github Actions`);
     res.writeHead(200, {'Content-Type': 'text/html; charset=UTF-8'})
     res.write(html);
-    res.end('ok');
+    res.end();
 }).listen(8080)
 
 
