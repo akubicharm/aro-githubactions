@@ -17,7 +17,7 @@ on:
 #    branches: [ "wip" ]
 #  pull_request:
 #    # The branches below must be a subset of the branches above
-    branches: [ "wip" ]
+#    branches: [ "wip" ]
 #  schedule:
 #    - cron: '41 13 * * 2'
 
