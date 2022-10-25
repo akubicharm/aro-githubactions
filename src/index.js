@@ -10,7 +10,7 @@ const timer = require('timers/promises')
 const key = process.env.COSMOS_KEY;
 const endpoint = process.env.COSMOS_ENDPOINT;
 
-const html = "<html><body><h1>Hello GitHub Actions</h1><br><img src="media/Octcat.jpg"></body></html>
+const html = "<html><body><h1>Hello GitHub Actions</h1><br><img src='media/Octcat.jpg'></body></html>"
 
 
 http.createServer(function (req, res) {
