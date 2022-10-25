@@ -26,7 +26,7 @@ on:
 
 jobs:
   code-scan:
-    uses: ./.github/workflows/codeql-analysis_wip.yml
+    uses: akubicharm/aro-githubactions/.github/workflows/codeql-analysis_wip.yml
   openshift-ci-cd:
     needs: code-scan
     name: Build and deploy to OpenShift
