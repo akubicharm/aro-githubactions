@@ -13,7 +13,7 @@ const endpoint = process.env.COSMOS_ENDPOINT;
 const html = "<html><body>"
 + "<h1>Hello GitHub Actions</h1><br>"
 + "<img src='https://github.com/akubicharm/aro-githubactions/raw/master/src/media/Octocat.jpg'>"
-//+ "<img src='https://github.com/akubicharm/aro-githubactions/raw/master/src/media/okd-panda-flat_rocketeer_with_number.svg'>"
++ "<img src='https://github.com/akubicharm/aro-githubactions/raw/master/src/media/okd-panda-flat_rocketeer_with_number.svg'>"
 + "</body></html>"
 
 
