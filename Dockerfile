@@ -5,6 +5,7 @@ WORKDIR /usr/src/app
 
 COPY src ./
 
+RUN mkdir -p node_modules/.cache && chmod -R 777 node_modules/.cache
 RUN npm install 
 
 EXPOSE 8080
