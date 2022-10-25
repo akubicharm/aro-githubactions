@@ -30,7 +30,8 @@ http.createServer(function (req, res) {
     //res.writeHead(200, {'Content-Type': 'text/plain'})
     //res.end(`Hello Github Actions`);
     res.writeHead(200, {'Content-Type': 'text/html; charset=UTF-8'})
-    res.end(html);
+    res.write(html);
+    res.end('ok');
 }).listen(8080)
 
 
