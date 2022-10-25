@@ -31,8 +31,6 @@ http.createServer(function (req, res) {
     var req_client = req.socket.remoteAddress
     setDataAsync(req_client, name);
 
-    //res.writeHead(200, {'Content-Type': 'text/plain'})
-    //res.end(`Hello Github Actions`);
     res.writeHead(200, {'Content-Type': 'text/html; charset=UTF-8'})
     res.write(html);
     res.end();
