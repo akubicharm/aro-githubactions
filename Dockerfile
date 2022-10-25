@@ -7,6 +7,7 @@ COPY src/package.json ./
 COPY src/.env ./
 
 
+USER root
 RUN npm install 
 
 USER 1001
