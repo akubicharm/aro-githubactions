@@ -5,8 +5,8 @@ WORKDIR /usr/src/app
 
 COPY src ./
 
-#RUN npm install 
+RUN npm install 
 
 EXPOSE 8080
 
-CMD ["node", "server.js"]
+CMD ["node", "index.js"]
