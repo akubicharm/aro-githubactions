@@ -26,7 +26,7 @@ on:
 
 jobs:
   openshift-ci-cd:
-    needs: code-scan
+    #needs: code-scan
     name: Build and deploy to OpenShift
     runs-on: ubuntu-20.04
     environment: production
